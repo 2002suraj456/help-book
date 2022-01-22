@@ -14,7 +14,7 @@ sudo pacman -S virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netc
 
 ## pcspkr beep(#)
 ```
-# echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
+echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
 ```
 
 ## libinput touchpad config(#)
